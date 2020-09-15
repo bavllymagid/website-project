@@ -1,0 +1,83 @@
+@font-face {
+  font-family: MinionPro-Regular;
+  src: url(MinionPro-Regular.otf);
+}
+
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
+li,a{
+	font-family: MinionPro-Regular,sans-serif;
+	font-size: 19px;
+	color: #efefef;
+	text-decoration: none;
+}
+span{
+	float: right;
+}
+
+.email_icon{
+	height: 15px;
+}
+
+.pemail{
+	font-family: MinionPro-Regular,sans-serif; ;
+	font-weight: lighter;
+	font-size: 13px;
+	color: #efefef;
+	text-decoration: none;
+	height: 10px;
+	transition: all 0.3s ease 0s;
+}
+.pemail:hover{
+	color: #EDA94F;
+}
+
+.logo{
+	width:23px;
+	height: 16px;
+	cursor: pointer;
+	margin-right: 5px;
+}
+
+header{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 6px 5% 0 3%;
+	z-index: 1;
+}
+
+.nav_links{
+	list-style: none;
+}
+
+.nav_links li{
+	display: inline-block;
+	padding: 0 15px;
+}
+
+.nav_links li a{
+	transition: all 0.3s ease 0s;
+}
+
+.nav_links li a:hover{
+	color: #EDA94F;
+}
+
+.rectangle{
+	 height: 7%;
+     width: 100%;
+     background-color: #000000;
+     position: absolute;
+     z-index: 1;
+     position: fixed;
+}
+
+.college_name{
+	font-size: 32px;
+	padding-left: 6%;
+
+}
