@@ -1,0 +1,156 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Styles/Sign up.css">
+    <title>Sign up</title>
+</head>
+<body>
+    <main>
+        <form action="">
+            <legend>
+                Sign up
+            </legend>
+            <fieldset>
+
+                <div class="container">
+                    <div class="first-name">
+                        <label for="first-name">&nbsp;First Name</label>
+                        <input title="Enter your First Name here" type="text" name="first-name" id="first-name" placeholder="First Name" required>
+                    </div>
+
+                    <div class="last-name">
+                        <label for="last-name">&nbsp;Last Name</label>
+                        <input title="Enter your Last Name here" type="text" name="last-name" id="last-name" placeholder="Last Name" required>
+                    </div>
+
+                    <div class="E-mail">
+                        <label for="E-mail">&nbsp;E-mail</label>
+                        <input title="Enter your E-mail here" type="email" name="E-mail" id="E-mail" placeholder="ex: user@gmail.com" onchange="validateEmail()" required>
+                        
+                    </div>
+                    <p id="mail-alert"></p>
+                    <div class="password">
+                        <label for="password">&nbsp;Password</label>
+                        <input title="Enter your Password here" type="password" name="password" id="password" placeholder="Password" onchange="passValidation()" required>
+                    </div>
+
+                    <div class="confirm">
+                        <label for="confirm">&nbsp;Confirm Password</label>
+                        <input title="Enter your Password again here>" type="password" name="confirm" id="confirm" placeholder="Confirm Password" onchange="confirmPass()" required>
+                    </div>
+                    <p id="pass-alert"></p>
+                    <div class="student-id">
+                        <label for="student-id">&nbsp;Student ID</label>
+                        <input title="Enter your Student ID here" type="text" name="student-id" id="student-id" placeholder="Student ID"  onfocus="confirmPass()" required>
+                    </div>
+
+
+                    <div class="faculty">
+                        <label>&nbsp;Faculty</label>
+                        <select required title="Select your faculty here">
+                            <option value="" disabled selected>Select your faculty</option>
+                            <option value="1">Business adminstration</option>
+                            <option value="2">Engineering</option>
+                            <option value="3">Medecine</option>
+                            <option value="4">Law</option>
+                            <option value="5">Languages and translation</option>
+                            <option value="6">Computer Science</option>
+                            <option value="7">Arts</option>
+                        </select>
+                    </div>
+
+                    <div class="year">
+                        <label>Academic Year</label>
+                        <select required title="Select your Academic year here">
+                            <option value="" disabled selected>Select your year</option>
+                            <option value="1">First year</option>
+                            <option value="2">Second year</option>
+                            <option value="3">Third year</option>
+                            <option value="4">Fourth year</option>
+                            <option value="5">Fifth year</option>
+                            <option value="6">sixth year</option>
+                        </select>
+                    </div>
+                    <input title="Click here to Sign up" type="submit" name="submit" value="Sign up" onclick="enter()"></input>
+                    <p  title="Click here to Sign in" id="to-sign-up">Already have an account? <a href="Sign in.html">Sign in here</a></p>
+                </div>
+            </fieldset>
+        </form>
+        <div>
+            <img src="../Images/OC3JB21.png" alt="">    
+        </div>
+    </main>
+
+    <script type="text/javascript"> 
+     
+		function validateEmail() {
+			var at = document.getElementById("E-mail").value.indexOf("@");
+			var dot = document.getElementById("E-mail").value.indexOf(".");
+			var message = "Invalid email please try again ,ex: user@gmail.com";
+			if ((at == -1 || dot == -1) && document.getElementById("E-mail").value != "")
+			{
+                document.getElementById('mail-alert').innerHTML = message;
+				return false;
+			}
+			else
+			{
+				document.getElementById('mail-alert').innerHTML = "";
+			    return true;
+			}
+		}
+
+		function passValidation() {
+			var validation = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,20}$/;
+			var password = document.getElementById("password").value;
+            var message = "Invalid Password please try again! Password must be atleast 6 digits and must contain digits, uppercase and lowercase letters. ";
+            
+
+			if (!password.match(validation) && password != "")
+			{
+				document.getElementById('pass-alert').innerHTML = message;
+				return false;
+			}
+			else
+			{
+				document.getElementById('pass-alert').innerHTML = "";
+			    return true;
+			}
+		}
+
+		function confirmPass() {
+			var password = document.getElementById("password").value;
+			var confirm = document.getElementById("confirm").value;
+			var message = "Passwords does not match, please try again!";
+			
+			if (passValidation())
+			{
+				if (password != confirm)
+				{
+					document.getElementById('pass-alert').innerHTML = message;
+					return false;
+				}
+				else
+				{
+					document.getElementById('pass-alert').innerHTML = "";
+			   		return true;
+				}
+			}
+		}
+
+		function formValidation() {
+			if (validateEmail() && passValidation() && confirmPass())
+			{
+				return true;
+			}
+			return false;
+		}
+
+        function enter(){
+            window.location.href = "home.html";
+        }
+
+	</script>
+
+</body>
+</html>

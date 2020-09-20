@@ -6,27 +6,6 @@
     <title>Sign in</title>
 </head>
 <body>
-    <!-- <div class="rectangle">
-		<header>
-			<div class="email_icon">
-				<img src="../Images/icon.png" class="logo" alt="logo">
-				<span>
-					<a class="pemail" href="#">Student0123@cis.asu.edu.eg</a>
-				</span>
-			</div>
-        
-		<a class="college_name" href="#">Hola College</a>
-		<nav class ="navbar">
-
-			<ul class="nav_links">
-				<li><a href="#">News</a></li>
-				<li><a href="#">Events</a></li>
-				<li><a href="#">About</a></li>
-			</ul>
-		</nav>
-		
-	</header>
-</div> -->
     <main>
         <form action="">
             <legend>
@@ -37,53 +16,27 @@
                 <div class="form-control">
                     <label for="E-mail">E-mail</label>
                     <br>
-                    <input autocomplete="off" type="email" id="E-mail" placeholder="Enter Your E-mail" required>
+                    <input autocomplete="off" type="email" name="E-mail" id="E-mail" placeholder="ex: user@gmail.com" required>
                 </div>
                 <div class="form-control">
                     <label for="Password">Password</label>
                     <br>
-                    <input type="password" id="Password" placeholder="Enter Your Password" required>
+                    <input type="password" name="password" id="Password" placeholder="Enter Your Password" required>
                 </div>
 
-                <button  type="submit">
-                    Sign In
-                </button>
-                <p  id="to-register">Don't have an account? <a href="signup.html">Sign Up here</a></p>
+                <input type="submit" name="submit" value="Sign in" onclick="enter()">
+            </input>
+                <p  id="to-register">Don't have an account? <a href="Sign up.html">Sign Up here</a></p>
             </fieldset>
         </form>
 
         <!-- <img src="../Images/OC3JB21.png" alt=""> -->
     </main>
-    <!-- <footer>
-        <div id="col-1">
-            <h3>About Hola Institue</h3>
-            <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure fugit accusantium nobis, aliquid minus odit? Recusandae modi ratione nemo ex dolore, tenetur deleniti, dolor assumenda rerum aut numquam odio suscipit?
-            </p>
-        </div>
 
-        <div id="col-2">
-            <h3>Quick Links</h3>
-            <ul>
-                <li><a href="">Home</a></li>
-                <li><a href="">About</a></li>
-                <li><a href="">Events</a></li>
-            </ul>
-        </div>
-
-        <div id="col-3">
-            <h3>Get in touch</h3>
-            <p>Hola collage</p>
-            <p>23 k.st north bw at the ellon reaf</p>
-            <p>contact us on +02 243968741</p>
-        </div>
-
-        <div id="col-4">
-            <h3>Where to go</h3>
-            <img src="map.JPG" alt="">
-        </div>
-    
-
-    </footer> -->
+    <script>
+        function enter() {
+            window.location.href = "home.html";
+        }
+    </script>
 </body>
 </html>

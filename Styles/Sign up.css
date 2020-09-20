@@ -1,0 +1,164 @@
+@font-face {
+    font-family: MinionPro-Regular;
+    src: url(../Fonts/MinionPro-Regular.otf);
+  }
+  
+  *{
+      margin: 0px;
+      padding: 0px;
+  }
+  body{
+    background-color: #efefef;
+    
+  }
+main{
+    display: flex;
+    justify-content: space-around;
+    
+}
+form{
+    align-self: center;
+    flex-basis: 700px;
+    max-width: 700px;
+    font-family: distomio roman;
+    position: relative;
+    transition: none;
+}
+legend{
+    text-align: center;
+    background-color: black;
+    font-size: x-large;
+    color: white;
+    padding: 20px 0px;
+    display: block;
+    width: 100%;
+    border-top-left-radius:70px;
+    border-top-right-radius:70px;
+}
+fieldset{
+    border: 0px solid #efefef;
+    background-color: #E9E7E7;
+    width: 100%;
+    border-bottom-left-radius:70px;
+    border-bottom-right-radius:70px;
+}
+.container{
+    display: grid;
+    grid-template-columns: 50% 0% 50%;
+    grid-template-areas: 
+    "first . last"
+    "e-mail e-mail e-mail"
+    "password . confirm"
+    "id id id"
+    "faculty . year"
+    "submit submit submit"
+    "sign-up sign-up sign-up";
+}
+label{
+    display: block;
+}
+.first-name{
+    padding: 10px;
+    grid-area: first;
+}
+input,select{
+    margin-top: 10px;
+    width: 95%;
+    font-size: 16px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    padding: 10px;
+}
+#student-id,#e-mail{
+    width: 98%;
+}
+.last-name{
+    padding: 10px;
+    grid-area: last;
+}
+.E-mail{
+    margin-bottom: 16px;
+    padding: 10px;
+    grid-area: e-mail;
+}
+.password{
+    padding: 10px;
+    grid-area: password;
+}
+.confirm{
+    padding: 10px;
+    grid-area: confirm;
+}
+.student-id{
+    margin-top: 16px;
+    padding: 10px;
+    grid-area:id;
+}
+.faculty{
+    padding: 10px;
+    grid-area:faculty;
+}
+.year{
+    padding: 10px;
+    grid-area:year;
+}
+
+
+
+
+input[type=submit]{
+    margin: 16px 10px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: #EDA94F;
+    font-size: 32px;
+    font-family: MinionPro-Regular;
+    transition: all .5s ;
+    grid-area: submit;
+}
+input[type=submit]:hover{
+   color:#EDA94F;
+   background-color: black;
+   
+}
+#to-sign-up{
+    font-size: 18px;
+   text-align: center;
+   margin-bottom: 20px;
+   grid-area: sign-up;
+}
+#to-sign-up a{
+    text-decoration: none;
+    color:hsl(0, 4%, 40%);
+    transition: all .5s;
+}
+#to-sign-up a:hover{
+    text-decoration: underline;
+    color:#0004ff;
+}
+
+main img{
+   width: 640px;
+   height: 800px;
+   align-items: center;
+   transition: none;
+}
+
+#mail-alert {
+    position: absolute;
+    top: 37.4%;
+    font-size: 15px;
+    left: 21px;
+    color:red;
+}
+
+#pass-alert {
+    position: absolute;
+    top: 52%;
+    font-size: 15px;
+    left: 21px;
+    color:red;
+}

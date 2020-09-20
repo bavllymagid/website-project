@@ -486,6 +486,10 @@ header{
 
 /*third page*/
 
+.third_part{
+	margin-top: 800px;
+}
+
 .sideline3{
 	margin: 25px 0 0 80px ;
 	margin-bottom: 50px;
