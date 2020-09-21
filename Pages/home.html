@@ -11,6 +11,10 @@
 				<img src="../Images/icon.png" class="logo" alt="logo">
 				<span>
 					<a class="pemail" href="Sign%20in.html" id="username_topLeft">Student0123@cis.asu.edu.eg</a>
+					<script>
+						localStorage.setItem("sign","sign in");
+						document.getElementById('username_topLeft').innerHTML = localStorage.getItem("sign");
+					</script>
 				</span>
 			</div>
         
@@ -93,7 +97,7 @@
 			<p id="edit9">Lorem ipsumLorem ipsumLorem<br> ipsumLorem ipsumLorem ipsumLorem<br> ipsumLorem ipsumLorem ipsumLorem<br>ipsum <br></p>
 		</div>
 
-		<button onclick="document.location.href='#'">Learn more</button>
+		<button onclick="document.location.href='about.html'">Learn more</button>
 	</div>
 
 	<div class="hola_courses">

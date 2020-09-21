@@ -45,6 +45,7 @@ function SignIn()
     else
     {
         localStorage.setItem("isAdmin", false);
+        localStorage.setItem("user",document.getElementById("E-mail").value);
     }
 
 }
@@ -72,5 +73,17 @@ function editContent(numberOfFields)
             edit.setAttribute("contenteditable", true);
         }
     }
+    else{
+      var user = localStorage.getItem("user");
+      var name = document.getElementById("username_topLeft");
+      name.innerHTML = user;
+
+    }
+
+    
+
+      
+        
+    
 }
 

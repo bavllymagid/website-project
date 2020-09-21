@@ -72,7 +72,7 @@
                             <option value="6">sixth year</option>
                         </select>
                     </div>
-                    <input title="Click here to Sign up" type="submit" name="submit" value="Sign up" onclick="enter()"></input>
+                    <input title="Click here to Sign up" type="button" name="submit" value="Sign up" onclick="enter()"></input>
                     <p  title="Click here to Sign in" id="to-sign-up">Already have an account? <a href="Sign in.html">Sign in here</a></p>
                 </div>
             </fieldset>
@@ -81,8 +81,7 @@
             <img src="../Images/OC3JB21.png" alt="">    
         </div>
     </main>
-
-    <script type="text/javascript"> 
+    <script> 
      
 		function validateEmail() {
 			var at = document.getElementById("E-mail").value.indexOf("@");
@@ -147,10 +146,12 @@
 		}
 
         function enter(){
+            localStorage.setItem("sign",document.getElementById("E-mail").value);
             window.location.href = "home.html";
         }
 
 	</script>
+
 
 </body>
 </html>

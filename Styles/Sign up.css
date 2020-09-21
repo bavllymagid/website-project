@@ -107,7 +107,7 @@ input,select{
 
 
 
-input[type=submit]{
+input[type=button]{
     margin: 16px 10px;
     border-radius: 10px;
     border: none;
