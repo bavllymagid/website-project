@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<script src="../Scripts/activity.js"></script>
 	<link rel="stylesheet" type="text/css" href="../Styles/about.css">
 	<title>About</title>
 </head>
@@ -10,7 +11,7 @@
 			<div class="email_icon">
 				<img src="../Images/icon.png" class="logo" alt="logo">
 				<span>
-					<a class="pemail" href="Sign%20in.html">Student0123@cis.asu.edu.eg</a>
+					<a class="pemail" href="Sign%20in.html" id="username_topLeft">Student0123@cis.asu.edu.eg</a>
 				</span>
 			</div>
         
@@ -39,8 +40,8 @@
 		<section class= "main_content1">
 		
 			<div class= "left_div">
-				<h2>Our Story</h2>
-				<p>
+				<h2 id="edit1">Our Story</h2>
+				<p id="edit2">
 					Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
 					sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 					Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
@@ -50,7 +51,7 @@
 			</div>
 	
 			<div class= "right_div">
-				<h2>Leadership</h2>
+				<h2 id="edit3">Leadership</h2>
 				<section class="leadership_photos">
 					<ul>
 						<li> 
@@ -74,18 +75,18 @@
 		<section class= "main_content2">
 	
 			<div class= "left_div">
-				<div class="header_text"><strong>Our History</strong></div>
+				<div class="header_text"><strong id="edit4">Our History</strong></div>
 					<ul>
-						<li>1842</li>
+						<li id="edit5"> 1842</li>
 						<li class="seperator_box">
 							<div class="seperator"></div>
-							<div>College was established</div>
+							<div id="edit6">College was established</div>
 						</li>
 
-						<li>1991</li>
+						<li id="edit7">1991</li>
 						<li class="seperator_box">
 							<div class="seperator"></div>
-							<div>
+							<div id="edit8">
 								Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
 								Aenean commodo ligula eget dolor. Aenean massa.
 								Cum sociis natoque penatibus et magnis dis parturient montes, 
@@ -93,20 +94,20 @@
 								</div>
 						</li>
 
-						<li>2002</li>
+						<li id="edit9">2002</li>
 						<li class="seperator_box">
 							<div class="seperator"></div>
-							<div>
+							<div id="edit10">
 								 Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
 								Aenean commodo ligula eget dolor. Aenean massa.
 								Cum sociis natoque penatibus et magnis dis parturient montes, 
 								nascetur ridiculus mus.
 							</div>
 						</li>
-						<li>2020</li>
+						<li id="edit11">2020</li>
 						<li class="seperator_box">
 							<div class="seperator"></div>
-							<div>Regret</div>
+							<div id="edit12">Regret</div>
 						</li>
 					</ul>
 			</div>
@@ -114,7 +115,7 @@
 			<div class= "right_div">
 				<img src="../images/college3.jpg" alt="College picture" class="college_vision_photo">
 				<h1>College Vision</h1>
-				<div class="college_vision">
+				<div class="college_vision" id="edit13">
 					Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
 					Aenean commodo ligula eget dolor. Aenean massa.
 					Cum sociis natoque penatibus et magnis dis parturient montes, 
@@ -128,7 +129,7 @@
 <footer>
         <div id="col-1">
             <h3>About Hola Institue</h3>
-            <p>
+            <p id="edit14">
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure fugit accusantium nobis, aliquid minus odit? Recusandae modi ratione nemo ex dolore, tenetur deleniti, dolor assumenda rerum aut numquam odio suscipit?
             </p>
         </div>
@@ -156,6 +157,8 @@
     	<hr>  
       <p class="copy_rights">@HOLA institute</p>
     </div>
+
+	<script>editContent(14);</script>
 
 
 </body>
