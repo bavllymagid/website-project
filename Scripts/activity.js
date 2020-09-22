@@ -38,6 +38,8 @@ function logout() {
      localStorage.setItem("sign","Sign in");
      document.getElementById('username_topLeft').innerHTML = localStorage.getItem("sign");
     document.getElementById('logout').style.display = "none";
+    localStorage.setItem("isAdmin", false);
+    location.reload();
     }
 
 
