@@ -31,6 +31,24 @@ span{
 	float: right;
 }
 
+span button {
+	background-color: #EDA94F;
+	border-radius: 10px;
+	text-align: center;
+	font-size: 10px;
+	width: 50px;
+	cursor: pointer;
+	font-family:MinionPro-Regular,sans-serif; 
+	border-color: #000000;
+	box-shadow: none;
+	border-collapse: collapse;
+}
+
+span button:hover{
+	 color:#EDA94F;
+   background-color: black;
+}
+
 .email_icon{
 	height: 15px;
 }
@@ -91,7 +109,7 @@ header{
      position: absolute;
      z-index: 1;
      position: fixed;
-     height: 7% ;
+     height: 55px;
 }
 
 .college_name{

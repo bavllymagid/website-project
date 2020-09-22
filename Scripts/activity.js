@@ -32,6 +32,15 @@ function showSlides(n) {
 
 
 
+
+function logout() {
+     localStorage.setItem("loged" , false);
+     localStorage.setItem("sign","Sign in");
+     document.getElementById('username_topLeft').innerHTML = localStorage.getItem("sign");
+    document.getElementById('logout').style.display = "none";
+    }
+
+
 // determines wether an admin or a user logs in
 function SignIn()
 {
@@ -45,7 +54,8 @@ function SignIn()
     else
     {
         localStorage.setItem("isAdmin", false);
-        localStorage.setItem("user",document.getElementById("E-mail").value);
+        localStorage.setItem("user",document.getElementById("E-mail").value , true);
+        localStorage.setItem("loged" , true);
     }
 
 }
@@ -57,6 +67,8 @@ function SignIn()
 function editContent(numberOfFields)
 {
     var isAdmin = localStorage.getItem("isAdmin");
+    var use = localStorage.getItem("user");
+    var loged = localStorage.getItem("loged");
     if (isAdmin == "true")
     {
         var username = document.getElementById("username_topLeft");
@@ -73,21 +85,18 @@ function editContent(numberOfFields)
             edit.setAttribute("contenteditable", true);
         }
     }
-    else{
+    else if (isAdmin != "true" && loged == "true"){
       var user = localStorage.getItem("user");
       var name = document.getElementById("username_topLeft");
       name.innerHTML = user;
-
-      var fuser = localStorage.getItem("f");
-      var first = document.getElementById("username_topLeft");
-      first.innerHTML = fuser;
-
+    }  
+    else{
+      document.getElementById('username_topLeft').innerHTML = localStorage.getItem("sign");
+    document.getElementById('logout').style.display = "none";
     }
-
-    
-
-      
-        
-    
 }
+
+
+             
+          
 
