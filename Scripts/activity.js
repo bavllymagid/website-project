@@ -78,6 +78,10 @@ function editContent(numberOfFields)
       var name = document.getElementById("username_topLeft");
       name.innerHTML = user;
 
+      var fuser = localStorage.getItem("f");
+      var first = document.getElementById("username_topLeft");
+      first.innerHTML = fuser;
+
     }
 
     
