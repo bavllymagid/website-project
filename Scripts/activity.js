@@ -49,7 +49,7 @@ function SignIn()
     var email = document.getElementById("E-mail").value;
     var password = document.getElementById("Password").value;
     
-    if (email == "a@b" && password == "a@b")
+    if (email == "Admin0123@cis.asu.edu.eg" && password == "a@b")
     {
         localStorage.setItem("isAdmin", true);
     }
