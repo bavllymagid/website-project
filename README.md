@@ -12,4 +12,4 @@ Bassel ahmed
 
 ---
 # Copy Rights 
-© Bavlly magid , Hola college project 
+© All contributers , Hola college project 
