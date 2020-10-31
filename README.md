@@ -3,7 +3,7 @@ It's a simple visualization of a college website
 
 To open this project you must open first home.html from pages/home.html. 
 ---
-# Contributers 
+# Contributors 
 Bavlly magid 
 Laila emad 
 Perryhan walid
