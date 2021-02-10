@@ -3,12 +3,14 @@ It's a simple visualization of a college website
 
 To open this project you must open first home.html from pages/home.html. 
 ---
-# Contributors 
-Bavlly magid 
-Laila emad 
-Perryhan walid
-Badr mohamed 
-Bassel ahmed
+# Contributors
+The website was a group project, the team members are: 
+- Ayman Mostafa
+- Bavlly Magid
+- Bassel Ahmed
+- Badr Mohamed 
+- Perry Walid 
+- Layla Emad
 
 ---
 # Copy Rights 
